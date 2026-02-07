@@ -3,3 +3,49 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    width: 100vw;
+    background-size: cover;
+    object-fit: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    background: url(responsive.avif);
+    position: sticky;
+    top: 0;
+}
+.icon{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.icon span{
+    color: #ec0909cb;
+}
+nav ul{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s;
+}
+
+nav ul li a:hover, .active{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #ec0909cb;
+    font-weight: 500;
+}
+.bars{
+    display: none;
+    color: #fff;
+}
