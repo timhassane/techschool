@@ -3,11 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
 
 header{
     width: 100vw;
     background-size: cover;
     object-fit: cover;
+    background: url(responsive.avif)no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    height: 60vh;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.418);
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 30px;
+    animation: .3s welcome;
 }
 .navbar{
     display: flex;
@@ -48,4 +59,54 @@ nav ul li a:hover, .active{
 .bars{
     display: none;
     color: #fff;
+}
+.text{
+    text-align: center;
+    line-height: 2.2;
+}
+.text .icon{
+    font-size: 80px;
+    letter-spacing: 1.2;
+    text-shadow: 5px 8px 10px #ec0909cb;
+
+}
+.text h2, .text h3{
+    color: #fff;
+}
+.cards{
+    display: flex;
+}
+.first .card{
+    background-image: conic-gradient(#cfb1b1cb, rgb(8, 8, 77));
+    width: 32.3%;
+    padding: 16px;
+    height: 35vh;
+    text-align: center;
+    line-height: 2;
+    color: #ec0909cb;
+    margin: 1%;
+    border-radius: 16px;
+    box-shadow: 10px 12px 25px rgba(255, 0, 0, 0.299);
+}
+.first .card h3{
+    text-decoration: underline;
+}
+.first .card p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+@keyframes welcome {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
 }

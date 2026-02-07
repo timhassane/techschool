@@ -1,15 +1,24 @@
-*{padding: 0;
-margin: 0;
-box-sizing: border-box;}
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    background: linear-gradient(100deg, #ffffff5a 0%, rgb(5, 5, 61) 70%, #fff 100%);
 }
+
 header{
     width: 100vw;
     background-size: cover;
     object-fit: cover;
+    background: url(responsive.avif)no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    height: 60vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.418);
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 30px;
+    animation: 2s welcome;
 }
 .navbar{
     display: flex;
@@ -51,206 +60,67 @@ nav ul li a:hover, .active{
     display: none;
     color: #fff;
 }
+.text{
+    text-align: center;
+    line-height: 2.2;
+}
+.text .icon{
+    font-size: 80px;
+    letter-spacing: 1.2;
+    text-shadow: 5px 8px 10px #ec0909cb;
 
-.presentation{
+}
+.text h2, .text h3{
+    color: #fff;
+}
+.all-cards .cards{
     display: flex;
-    background: linear-gradient(100deg, #ffffff5a 0%, rgb(5, 5, 61) 70%, #fff 100%);
-}
-.genie_log{
-    background: url(gen.jpg)no-repeat center center;
-    background-size: cover;
-    object-fit: cover;
-    width: 33.3%;
-    height: 100vh;
-    border-radius: 5px;
-    border-right: 5px solid #000;
-    border-left: 5px solid #000;
-    transition: 1s;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    animation: 1s slide;
-}
-.resinfo{
-    background: url(ResInfo.jpg)no-repeat center center ;
-    background-size: cover;
-    width: 33.3%;
-    height: 100vh;
-    border-radius: 5px;
-    border-right: 5px solid #000;
-    transition: 1s;
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    animation: 1s slide;
-}
-.data_ia{
-    background: url(data_ia.jpeg)no-repeat center center ;
-    background-size: cover;
-    width: 33.3%;
-    height: 100vh;
-    border-radius: 5px;
-    border-right: 5px solid #000;
-    transition: 1s;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    animation: 1s slide;
-}
-
-.genie_log:hover, .resinfo:hover, .data_ia:hover{
-    transform: scale(.94); 
-}
-.genie_log ul {
-    list-style: none;
-    margin-top: 150px;
-    padding: 15px 0;
-    text-align: center;
-}
-.resinfo ul {
-    list-style: none;
-    margin-top: 150px;
-    padding: 15px 0;
-    text-align: center;
-}
-.data_ia ul{
-    list-style: none;
-    margin-top: 150px;
-    padding: 15px 0;
-    text-align: center;
-}
-.genie_log ul a,
-.resinfo ul a,
-.data_ia ul a{
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-     text-align: center;
-     font-weight: bold;
-     transition: 0.3s;
-}
-.genie_log ul li,
-.resinfo ul li,
-.data_ia ul li{
-   margin: 10px;
-}
-.genie_log ul a:hover,
-.resinfo ul a:hover,
-.data_ia ul a:hover{
-    color: #ec0909cb;
-}
-.presentation-btn{
-    
-    align-items: center;
+    line-height: 2;
     justify-content: center;
-    text-align: center;
-
+    animation: 2.5s welcome;
 }
-.name{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 32px;
+.cards .card{
+    background-image: conic-gradient(#cfb1b1cb, rgb(8, 8, 77));
     text-align: center;
-    text-shadow: #ec0909cb 5px 10px 15px;
-    margin-top: 50px;
+    margin: 0 40px;
+    width: 210px;
+    border-radius: 16px;
 }
-.name span{
+.cards .card .nbre{
+    font-size: 40px;
+    font-weight: 600;
     color: #ec0909cb;
-    text-shadow: #fff;
+    text-shadow: 5px 5px 10px #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.presentation-btn{
-    margin-top: 20px;
-}
-.presentation-btn a{
-    padding: 10px 35px;
+.cards .card p{
     color: #fff;
+    text-shadow: 5px 5px 10px #ec0909cb;
+    Font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 18px;
-    border: 3px solid #ec0909cb;
-    background-color: #ffffff57;
-    transition: .7s;
+    padding-bottom: 10px;
 }
-.presentation-btn a:hover{
-    color: #ec0909cb;
-    background-color: rgba(255, 255, 255, 0.797);
-}
+
 footer{
     background-color: #000;
     color: #606060;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    margin-top: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.418);
+    border-radius: 5px 5px 0 0;
 }
-@keyframes slide {
+@keyframes welcome {
     0%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50%{
+        opacity: .5;
         transform: scale(1.3);
     }
-    
     100%{
+        opacity: 1;
         transform: scale(1);
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 10px) {
-    .navbar{
-        height: 100vh;
-        width: 100vw;
-        background: url(responsive.avif);
-    }
-
-    .bars{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 100px;
-        cursor: pointer;
-
-    }
-    nav ul{
-        display: block;
-        flex-direction: column;
-
-    }
-    nav ul li {
-        margin: 30px 0;
-        color: black;
-        text-align: center;
-    }
-    nav ul li a{
-        color: #ffffff;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-shadow: 5px 10px 10px #ec0909cb;
-    }
-    .active:hover{
-        font-size: 21px;
-    }
-    .icon{
-        position: absolute;
-        top: 0;
-        left: 50px;
     }
 }
